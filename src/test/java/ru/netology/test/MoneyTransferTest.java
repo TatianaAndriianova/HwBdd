@@ -72,6 +72,6 @@ public class MoneyTransferTest {
                 .makeTransfer(String.valueOf(amount), secondCard);
 
         assertEquals(secondInitial, dashboardPage.getCardBalance(secondCard),
-                "БАГ: перевод на сумму сверх баланса не должен выполняться!");
+                "Перевод на сумму сверх баланса не должен выполняться!");
     }
 }
